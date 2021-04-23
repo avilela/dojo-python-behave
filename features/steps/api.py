@@ -26,5 +26,15 @@ def check_response_code(context, response_code):
 
 @then('validate all required fields are returned')
 def validate_all_required_fields_are_returned(context):
+    table = []
+    for row in context.table.rows:
+        table.append({row['field']: row['type']})
+
     json_received_fields = json.loads(context.response.text)
-    assert 'users' in json_received_fields
+
+    for item in table:
+        for key, value in item.items():
+            assert key in json_received_fields, f"Error: {key} not in response"
+            assert value == type(json_received_fields[key]).__name__, (
+                f"Error: {value} not in response"
+            )

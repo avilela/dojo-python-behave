@@ -15,8 +15,8 @@ Feature: API Mock Test
         When user execute a get request
         Then API will send response_code 200
         And validate all required fields are returned
-        """
-            using tables to send multiples fields
-        """
-        
+            | field  | type |
+            | users  | list |
+            | total  | str  |
+
     
