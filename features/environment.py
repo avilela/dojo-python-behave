@@ -3,11 +3,12 @@ from selenium import webdriver
 
 def before_all(context):
     context.browser = context.config.userdata['browser']
-    context.driver = webdriver.Chrome()
 
 
 def before_feature(context, feature):
-    pass
+    if 'web' in feature.tags:
+        context.driver = webdriver.Chrome()
+        context.drive.maximize_window()
 
 
 def before_step(context, step):
@@ -19,9 +20,9 @@ def after_step(context, step):
 
 
 def after_feature(context, feature):
-    pass
+    if 'web' in feature.tags:
+        context.driver.quit()
 
 
 def after_all(context):
-    # context.driver.quit()
     pass

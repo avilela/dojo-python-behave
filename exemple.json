@@ -1,0 +1,151 @@
+{
+  "Templating example": "For more information about templating, click the blue 'i' above this editor",
+  "users": [
+      {
+        "userId": "97410",
+        "firstname": "Loren",
+        "lastname": "Greenfelder",
+        "friends": [
+            {
+              "id": "29eacdca-a995-4502-8d31-03d68de3bffd"
+            }
+        ]
+      },
+      {
+        "userId": "46658",
+        "firstname": "Leonor",
+        "lastname": "Feest",
+        "friends": [
+        ]
+      },
+      {
+        "userId": "24445",
+        "firstname": "Shannon",
+        "lastname": "Osinski",
+        "friends": [
+            {
+              "id": "e9b0e213-1b2e-426b-80c7-4e1cc131c695"
+            }
+        ]
+      },
+      {
+        "userId": "93065",
+        "firstname": "Lolita",
+        "lastname": "Trantow",
+        "friends": [
+            {
+              "id": "3910b098-b636-43d3-8ffe-82b508b91616"
+            },
+            {
+              "id": "dd933e1b-077c-43f8-90c5-59081b35616f"
+            },
+            {
+              "id": "fc6170c6-2c59-4c45-acc7-2a1687734d4b"
+            },
+            {
+              "id": "16689781-21d4-4aec-a335-e2ba0927416e"
+            },
+            {
+              "id": "21415d10-3dd6-4123-b9bb-9f7cd0c539d3"
+            }
+        ]
+      },
+      {
+        "userId": "62032",
+        "firstname": "Rahsaan",
+        "lastname": "Kassulke",
+        "friends": [
+            {
+              "id": "216a336b-2056-4ae7-a9a3-471e000dc6f0"
+            },
+            {
+              "id": "bb600421-fdee-48e8-80ff-9d4901652615"
+            },
+            {
+              "id": "19a67380-76d6-416a-95ee-ae324c78c27d"
+            },
+            {
+              "id": "32f751bc-4c6d-4049-9f35-0d49fa9c97b0"
+            },
+            {
+              "id": "7224cdbf-845e-4e86-a318-cbe83813d466"
+            }
+        ]
+      },
+      {
+        "userId": "67265",
+        "firstname": "Adriana",
+        "lastname": "Lowe",
+        "friends": [
+            {
+              "id": "fc529d01-415c-4777-88fb-b9ade7635350"
+            },
+            {
+              "id": "5356fd00-2317-4bda-abec-20b65ed8a52f"
+            },
+            {
+              "id": "08c92799-e60b-4c00-9342-af1a17cc8b8a"
+            },
+            {
+              "id": "c19e5c9e-9c7f-4fac-82a8-45ce08fe9037"
+            }
+        ]
+      },
+      {
+        "userId": "13830",
+        "firstname": "Ewell",
+        "lastname": "Barrows",
+        "friends": [
+            {
+              "id": "691cb366-d4e1-4154-a91a-8b2e6da2e6ac"
+            }
+        ]
+      },
+      {
+        "userId": "88483",
+        "firstname": "Annabel",
+        "lastname": "Yundt",
+        "friends": [
+            {
+              "id": "799f6cd2-1778-4e35-a1f4-b110c54b7fdd"
+            },
+            {
+              "id": "108125e4-590e-46d5-bed2-1a6547ebe43e"
+            },
+            {
+              "id": "97bf5321-ddaa-4d72-805b-040ea7b8fc9f"
+            }
+        ]
+      },
+      {
+        "userId": "10331",
+        "firstname": "Jarrod",
+        "lastname": "Collier",
+        "friends": [
+            {
+              "id": "b9557c04-3ec5-4305-82f7-5b2e895680f3"
+            },
+            {
+              "id": "509fabef-a6d3-4b1a-ae25-9af3a3f3d334"
+            },
+            {
+              "id": "d35c1ed7-fcdd-4174-a9d0-13b1968aaf61"
+            },
+            {
+              "id": "72b72e03-6b99-4dab-b2ef-e9b645ac39df"
+            }
+        ]
+      },
+      {
+        "userId": "70711",
+        "firstname": "Arturo",
+        "lastname": "Mills",
+        "friends": [
+            {
+              "id": "add04023-2a53-471c-b1e4-16d1ec875338"
+            }
+        ]
+      }
+  ],
+  "total": "10"
+}
