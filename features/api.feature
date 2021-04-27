@@ -2,6 +2,8 @@
 Feature: API Mock Test
 
     Simple Api test
+    Background:
+    
 
     Scenario: Validate a response code for get request 
         Given user has mock api for users
@@ -19,4 +21,8 @@ Feature: API Mock Test
             | users  | list |
             | total  | str  |
 
-    
+    Scenario: Validate post request
+        Given user has mock api for post request
+        When user post with body and headers
+        Then API will send response_code 201
+

@@ -1,6 +1,6 @@
 from behave import given, when, then
-from requests import get
-import json
+from requests import get, post
+from json import loads, dumps
 
 REQUEST_ERROR_MESSAGE = {200: "Something is not ok, please check the request"}
 
@@ -26,15 +26,24 @@ def check_response_code(context, response_code):
 
 @then('validate all required fields are returned')
 def validate_all_required_fields_are_returned(context):
-    table = []
+    json_received_fields = loads(context.response.text)
+
     for row in context.table.rows:
-        table.append({row['field']: row['type']})
+        key = row['field']
+        value = row['type']
+        assert key in json_received_fields, f"Error: {key} not in response"
+        assert value == type(json_received_fields[key]).__name__, (
+            f"Error: {value} not in response"
+        )
 
-    json_received_fields = json.loads(context.response.text)
 
-    for item in table:
-        for key, value in item.items():
-            assert key in json_received_fields, f"Error: {key} not in response"
-            assert value == type(json_received_fields[key]).__name__, (
-                f"Error: {value} not in response"
-            )
+@given('user has mock api for post request')
+def validate_post_request(context):
+    context.api = 'http://0.0.0.0:3000/content'
+
+
+@when('user post with body and headers')
+def set_required_fields(context):
+    headers = {'authorization': '123456'}
+    body = {"fabi": "faladora"}
+    context.response = post(context.api, data=dumps(body), headers=headers)
