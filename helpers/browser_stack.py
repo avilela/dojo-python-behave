@@ -13,6 +13,6 @@ def upload_app(app_path: str, app_name: str) -> dict:
             post(
                 'https://api-cloud.browserstack.com/app-automate/upload',
                 files=files,
-                auth=('augustoteixeira_XcHa4y', 'wLD4zP4qHh79MpRrYh54')
+                auth=('', '')
             ).text
         )
