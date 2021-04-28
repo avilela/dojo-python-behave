@@ -3,7 +3,7 @@ Feature: API Mock Test
 
     Simple Api test
     Background:
-    
+        Given user has mock api for users
 
     Scenario: Validate a response code for get request 
         Given user has mock api for users

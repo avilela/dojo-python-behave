@@ -1,4 +1,9 @@
 behave
+browserstack-local
+paver
+psutil
+ipdb
+Appium-Python-Client
 selenium
 requests
 page_objects
